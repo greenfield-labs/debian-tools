@@ -1,5 +1,10 @@
+name: build-and-push-image
 on:
   push:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push-image:
